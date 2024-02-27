@@ -33,7 +33,7 @@ terraform apply
 | Name                 | Description                                     | Type         | Default                                    | Required |
 | -------------------- | ----------------------------------------------- | ------------ | ------------------------------------------ | :------: |
 | azs                  | The availability zones to use                   | list(string) | ["us-east-1a", "us-east-1b", "us-east-1c"] |    no    |
-| num_reserved_subnets | The number of subnets to reserve for future use | number       | 1                                          |    no    |
+| num_reserved_azs | The number of availability zones to reserve for future use | number       | 1                                          |    no    |
 | public_subnets       | The name of the public subnets                  | list(string) | ["web"]                                    |    no    |
 | private_subnets      | The name of the private subnets                 | list(string) | ["app", "db", "reserved"]                  |    no    |
 | cidr_block           | The IPv4 CIDR block for the VPC                 | string       | "10.16.0.0/16"                             |    no    |
