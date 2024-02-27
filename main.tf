@@ -1,8 +1,6 @@
-
-
 provider "aws" {
-  region  = "us-east-1"
-  profile = "default"
+  region  = var.region
+  profile = var.aws_profile
 }
 
 module "vpc" {
