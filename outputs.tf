@@ -21,3 +21,11 @@ output "public_subnet_ids" {
 output "private_subnet_ids" {
   value = module.subnets.private_subnet_ids
 }
+
+output "subnets_by_az" {
+  value = module.subnets.subnets_by_az
+}
+
+output "subnets_by_type" {
+  value = module.subnets.subnets_by_type
+}
