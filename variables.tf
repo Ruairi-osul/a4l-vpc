@@ -1,15 +1,3 @@
-variable "region" {
-  description = "The AWS region to deploy to"
-  type        = string
-  default     = "us-east-1"
-}
-
-variable "aws_profile" {
-  description = "The AWS profile to use"
-  type        = string
-  default     = "default"
-}
-
 variable "azs" {
   description = "The availability zones to use"
   type        = list(string)
